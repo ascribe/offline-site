@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 wget \
-  --recursive \
+  --mirror \
   --no-clobber \
   --page-requisites \
-  --html-extension \
+  --adjust-extension \
   --convert-links \
   --restrict-file-names=windows \
   --domains "$1" \
